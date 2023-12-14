@@ -76,8 +76,6 @@
                     <!-- /.col -->
                 </div>
             </form>
-
-{{--            <a href="#" class="text-center">I already have a membership</a>--}}
         </div>
         <!-- /.form-box -->
     </div><!-- /.card -->
