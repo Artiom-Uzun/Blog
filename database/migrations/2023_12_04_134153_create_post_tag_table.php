@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('post_tag', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('id')->autoIncrement();
             $table->integer('tag_id')->unsigned();
             $table->integer('post_id')->unsigned();
             $table->timestamps();
