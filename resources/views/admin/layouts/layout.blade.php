@@ -163,11 +163,13 @@
                          alt="User Image">
                 </div>
                 <div class="info">
-                    <a href="#" class="d-block">Артем Узун</a>
+                    @if(auth()->check())
+                    <a href="#" class="d-block">{{auth()->user()->name}}</a>
+                    @endif
                 </div>
             </div>
 
-            <!-- Sidebar Menu -->
+{{--            <!-- Sidebar Menu -->--}}
             <nav class="mt-2">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                     data-accordion="false">
